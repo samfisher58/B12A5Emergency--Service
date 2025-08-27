@@ -20,7 +20,7 @@ getElement("hotline-section-parent").addEventListener("click", function (e) {
       callBtn.parentNode.parentNode.children[1].children[2].innerText;
     const coinCount = getElement("coin-count-navbar").innerText;
     const coinCountAfterCall = Number(coinCount) - 20;
-    if (coinCountAfterCall < 20) {
+    if (coinCountAfterCall < 0) {
       alert("Insufficient coin");
       return;
     }
