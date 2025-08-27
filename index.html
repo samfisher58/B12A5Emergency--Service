@@ -37,8 +37,8 @@
         <button class="btn rounded-full w-32 bg-[#41FF6B1A] font-semibold">
           <span id="life-count-navbar">0</span> <img src="./assets/heart.png" alt="" class="w-5" />
         </button>
-        <button id="coin-count-navbar" class="btn rounded-full w-32 bg-[#41FF6B1A] font-semibold">
-          100 <span> <img src="./assets/coin.png" alt="" class="w-5" /></span>
+        <button  class="btn rounded-full w-32 bg-[#41FF6B1A] font-semibold">
+          <span id="coin-count-navbar">100</span> <img src="./assets/coin.png" alt="" class="w-5" />
         </button>
         <button class="btn rounded-full w-32 bg-[#00A63E] text-white">
           <span id="copy-count-navbar">2</span> Copy
@@ -73,7 +73,7 @@
       <!-- hotline section starts -->
       <div
         id="hotline-section-parent"
-        class="col-span-9 grid grid-cols-3 gap-6"
+        class="col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
       >
         <!-- card 1 -->
         <div class="bg-base-100 shadow-sm rounded-xl p-6">
@@ -255,8 +255,12 @@
       <aside id="history-section-parent" class="col-span-3 shadow-sm bg-base-100 rounded-xl">
         <div class="flex justify-between items-center m-6">
             <h1 class="text-xl"><span><i class="fa-solid fa-clock-rotate-left"></i></span> Call history</h1>
-            <button class="btn btn-accent bg-[#00A63E] text-white text-base rounded-[50px] px-9 py-3">Clear</button>
+            <button id="clear-btn" class="btn btn-accent bg-[#00A63E] text-white text-base rounded-[50px] px-9 py-3">Clear</button>
         </div>
+        <div id="history-section-container">
+
+        </div>
+
       </aside>
       <!-- history section ends -->
     </main>
