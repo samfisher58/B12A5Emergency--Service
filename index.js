@@ -18,25 +18,18 @@ getElement('hotline-section-parent').addEventListener('click', function(e){
         callBtn = e.target
         nationalServiceName = callBtn.parentNode.parentNode.children[1].children[0].innerText
         nationalServiceNumber = callBtn.parentNode.parentNode.children[1].children[2].innerText
-        
-
-        
-
-        
         const coinCount = getElement('coin-count-navbar').innerText
         const coinCountAfterCall = Number(coinCount) - 20;
         if(coinCountAfterCall < 20){
             alert('Insufficient coin')
             return;
         }
-        alert(nationalServiceName +"\n"+ nationalServiceNumber)
-
         getElement('coin-count-navbar').innerText = coinCountAfterCall
+        alert(nationalServiceName +"\n"+ nationalServiceNumber)
         }
-
-
-
+        // call button to show service name and number + coin count ends
      }
 
+     
 
 )
