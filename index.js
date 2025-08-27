@@ -33,7 +33,7 @@ getElement("hotline-section-parent").addEventListener("click", function (e) {
 
       const newHistory = document.createElement('div')
       newHistory.innerHTML = `
-      <div class="flex items-center justify-between my-6 mt-4 p-4"> 
+      <div class="flex flex-col sm:flex-row items-center justify-between my-6 mt-4 p-10"> 
           <div>
             <h3 class="text-lg font-bold">${nationalServiceName}</h3>
             <p class="text-lg text-[#5C5C5C]">${nationalServiceNumber}</p>
